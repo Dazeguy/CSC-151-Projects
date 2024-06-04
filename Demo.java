@@ -26,10 +26,10 @@ public class Demo {
         String smokingStatus = scanner.nextLine();
 
         System.out.print("Enter the Policyholder’s Height (in inches): ");
-        int height = scanner.nextInt();
+        double height = scanner.nextDouble();
 
         System.out.print("Enter the Policyholder’s Weight (in pounds): ");
-        int weight = scanner.nextInt();
+        double weight = scanner.nextDouble();
 
         // Creating a Policy object with the provided inputs
         Policy policy = new Policy(policyNumber, providerName, firstName, lastName, age, smokingStatus, height, weight);

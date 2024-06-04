@@ -5,8 +5,8 @@ public class Policy {
     private String lastName;
     private int age;
     private String smokingStatus;
-    private int height;
-    private int weight;
+    private double height;
+    private double weight;
 
     // No-arg constructor
     public Policy() {
@@ -16,12 +16,12 @@ public class Policy {
         this.lastName = "";
         this.age = 0;
         this.smokingStatus = "non-smoker";
-        this.height = 0;
-        this.weight = 0;
+        this.height = 0.0;
+        this.weight = 0.0;
     }
 
     // Parameterized constructor
-    public Policy(int policyNumber, String providerName, String firstName, String lastName, int age, String smokingStatus, int height, int weight) {
+    public Policy(int policyNumber, String providerName, String firstName, String lastName, int age, String smokingStatus, double height, double weight) {
         this.policyNumber = policyNumber;
         this.providerName = providerName;
         this.firstName = firstName;
@@ -85,7 +85,7 @@ public class Policy {
         this.height = height;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
@@ -93,7 +93,7 @@ public class Policy {
         this.weight = weight;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
